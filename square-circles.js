@@ -15,7 +15,7 @@ function draw() {
   for (var i = 0; i < x.length; i = i + 5) {
     fill(100,200,230,40);
     noStroke();
-    rect(x[i], y[i], 1 + (x.length - i),1+(y.length-i));
+    rect(x[i]-(1 + (x.length - i))/2, y[i]-(1+(y.length-i))/2, 1 + (x.length - i),1+(y.length-i));
   }
 
   x = x.slice(-50); // keep the last 50 x values
